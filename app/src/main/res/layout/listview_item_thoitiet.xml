@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+
+    android:weightSum="2">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:text="Ngay thang"
+            android:id="@+id/tvngay"
+            android:textSize="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/_25sdp"
+            android:text="Trangthai"
+            android:id="@+id/tvtrangthai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgtrangthai"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp" />
+            <TextView
+                android:id="@+id/tvMaxTemp"
+                android:text="Max Temp"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvMinTemp"
+                android:text="Min Temp"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
